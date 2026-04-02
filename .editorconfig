@@ -1,0 +1,34 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Global settings for all files
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+end_of_line = lf
+
+# Web, JSON, YAML, and Markdown (Standard 2-space indentation)
+[*.{html,htm,js,ts,json,yml,yaml,md}]
+indent_size = 2
+
+# SQL files (Standard 2 spaces or 4, choosing 2 for query density)
+[*.sql]
+indent_size = 2
+
+# Makefile (MUST use tabs)
+[Makefile]
+indent_style = tab
+indent_size = 4
+
+# Python files (PEP 8 recommends 4 spaces)
+[*.py]
+indent_size = 4
+
+# Java and Kotlin files (Standard 4 spaces)
+[*.{java,kt,kts}]
+indent_size = 4

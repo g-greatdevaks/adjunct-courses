@@ -1,0 +1,53 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-yaml
+      - id: check-added-large-files
+        args: [--maxkb=500]
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-json
+      - id: detect-private-key
+
+  # Ruff for Python (Linting and Formatting)
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.9
+    hooks:
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix]
+      - id: ruff-format
+
+  # SQLFluff for SQL (Linting and Formatting)
+  - repo: https://github.com/sqlfluff/sqlfluff
+    rev: 4.1.0
+    hooks:
+      - id: sqlfluff-lint
+        args: [--dialect, mysql]
+      - id: sqlfluff-fix
+        args: [--dialect, mysql]
+
+  # Prettier for Markdown and YAML
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8
+    hooks:
+      - id: prettier
+        types_or: [markdown, yaml]
+
+  # MyPy for Python Type Checking
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.20.0
+    hooks:
+      - id: mypy
+
+  # Detect Secrets
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+
+  # Jupyter Notebook Output Stripping
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.9.1
+    hooks:
+      - id: nbstripout
