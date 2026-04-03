@@ -20,7 +20,10 @@ An advocate for sustainable innovation, he currently serves as a Sr. Solutions E
 
 The course materials are organized by institution or subject area.
 
-_(The course listing is to be populated as the repository develops.)_
+### Database Management Systems (DBMS) - GLA University
+
+- **Directory**: [`dbms/glau/bcsc0034/`](dbms/glau/bcsc0034/)
+- **Description**: A comprehensive module covering programmatic relational database interactions and advanced schema design. Topics include Python DB-API connectivity, cursor methodologies, parameterized queries (SQL Injection prevention), performant batch operations (`executemany`), Normal Forms (1NF through 6NF), Normalization vs. De-Normalization trade-offs, Lossy Joins/Spurious rows, and visual schema verification.
 
 ## Repository Structure
 
@@ -30,11 +33,34 @@ The repository contains several configuration files to maintain code quality and
 - **`.gitignore`** (https://git-scm.com/docs/gitignore): Specifies intentionally untracked files that Git should ignore.
 - **`.pre-commit-config.yaml`** (https://pre-commit.com): Configuration for `pre-commit` hooks (Linters, Formatters, Security Scoring, etc.).
 
-## Local Development
+### Generic Repository Structure
+
+```text
+/
+├── .pre-commit-config.yaml
+├── README.md
+└── dbms/
+    └── glau/
+        └── <module_code>/
+            └── lectureN/
+                ├── assets/                  # Static resources (Datasets, images)
+                ├── <course_topic>.ipynb     # Interactive Notebooks
+                └── lab_cheatsheet/          # Verification scripts and requirements
+```
+
+## Usage Instructions
+
+Course-specific setup procedures, virtual environment configurations, and Google Colab orientation guidelines are located within the respective module directories.
+
+- **DBMS Module Context (BCSC0034)**: See [`dbms/glau/bcsc0034/README.md`](dbms/glau/bcsc0034/README.md).
+
+---
+
+## Pre-Commit Quality Checks (Development)
 
 The preservation of code quality is facilitated through the utilization of `pre-commit` hooks for Python, SQL, and standard file formats.
 
-### Installation Methodologies
+### Installation Procedures
 
 Installation procedures are contingent upon the host operating system.
 

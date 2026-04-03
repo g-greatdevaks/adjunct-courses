@@ -1,0 +1,2 @@
+# DBMS Lab Dependencies
+mysql-connector-python
