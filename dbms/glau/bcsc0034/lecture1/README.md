@@ -25,3 +25,19 @@ This lecture establishes the dual foundations of modern database interactions: p
 - **`dbms_foundations.ipynb`**: Interactive Jupyter Notebook containing both lecture explanations and hands-on laboratory exercises.
 - **`assets/`**: Repository of flat CSV datasets simulation real-world transactional loads.
 - **`lab_cheatsheet/`**: Interactive CLI support tools for validating Lab 1.
+
+## Prerequisites and Environment Setup
+
+To execute the exercises in the notebook, follow the instructions below.
+
+### 1. Virtual Environment Configuration
+
+Comprehensive virtual environment setup instructions for various operating systems (Linux dependencies, Windows activation) are documented within the `dbms_foundations.ipynb` notebook.
+
+### 2. Dependencies
+
+Install the specific requirements for this lab:
+
+```bash
+python -m pip install -r lab_cheatsheet/requirements.txt
+```
