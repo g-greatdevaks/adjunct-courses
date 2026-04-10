@@ -186,6 +186,7 @@
 
 ### Data ###
 *.csv
+!dbms/glau/bcsc0034/lecture1/assets/unnormalized_data.csv
 *.dat
 *.efx
 *.gbr
