@@ -2,7 +2,7 @@
 
 ## Objective
 
-This assignment evaluates the combined understanding of database design principles (Lecture 1) and advanced data retrieval and optimization techniques (Lecture 2). Students will step into the role of a data engineer building a reporting system for a retail chain with multiple physical stores.
+This assignment evaluates the combined understanding of database design principles (Lecture 1) and advanced data retrieval techniques (Lecture 2). Students will step into the role of a data engineer building a reporting system for a retail chain with multiple physical stores.
 
 ## Scenario
 
@@ -41,10 +41,3 @@ Write Python functions to execute the following queries using SQL:
 
 1.  **High-Performing Stores**: Find stores whose total sales revenue is greater than the average total sales revenue across all stores. (Hint: Requires a subquery in the `HAVING` clause).
 2.  **Localized Dead Stock**: Identify products that are in stock in a specific store (inventory > 0) but have never been sold in that specific store. (Hint: Requires a subquery with `NOT IN` or `NOT EXISTS`).
-
-### Task 4: Query Optimization and Analysis (Lecture 2)
-
-1.  **The Bottleneck**: Write a query to find the total quantity sold for a specific product in a specific store within a specific date range.
-2.  **Analysis**: Run `EXPLAIN` on this query and observe the execution plan. Note the `type` and `rows` columns.
-3.  **Optimization**: Create a composite index on the `sales` table to optimize this query. Determine the best order of columns for the index based on the Leftmost Prefix Rule.
-4.  **Verification**: Re-run `EXPLAIN` and verify that the execution plan now utilizes the index instead of a full table scan.
